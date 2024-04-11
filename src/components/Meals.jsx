@@ -16,7 +16,7 @@ const Meals = () => {
   return (
     <ul id="meals">
       {fetchedMeals.map((meal) => (
-        <MealItem {...meal} />
+        <MealItem {...meal} key={meal.id} />
       ))}
     </ul>
   );
