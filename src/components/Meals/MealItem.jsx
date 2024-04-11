@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { currencyFormatter } from "../util/formatting";
-import Button from "./UI/Button";
-import CartContext from "../store/CartContext";
+import { currencyFormatter } from "../../util/formatting";
+import Button from "../UI/Button";
+import CartContext from "../../store/CartContext";
 
 const MealItem = ({ id, name, image, price, description }) => {
   const cartCtx = useContext(CartContext);
